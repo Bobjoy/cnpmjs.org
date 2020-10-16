@@ -1,10 +1,10 @@
-FROM node:12
+FROM node:10-alpine3.11
 MAINTAINER Bono Lv <lvscar  {aT} gmail.com>
 
 # Working enviroment
 ENV \
     CNPM_DIR="/var/app/cnpmjs.org" \
-    CNPM_DATA_DIR="/var/data/cnpm_data" 
+    CNPM_DATA_DIR="/var/data/cnpm_data"
 
 RUN mkdir  -p ${CNPM_DIR}
 
